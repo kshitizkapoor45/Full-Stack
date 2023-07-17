@@ -1,0 +1,17 @@
+input{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+h1{
+    background-color: burlywood;
+    color: black;
+}
+
+section{
+    background-color: aliceblue;
+}
+
+body{
+    margin: 20px;
+}
+
