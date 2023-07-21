@@ -1,24 +1,72 @@
-<html>
-    <head>
-        <title> Survey Form </title>
-        <link rel="stylesheet" href="survey.css">
-    </head>
-    <body>
-        <h1 align="center" style="font-family: Arial;">Instagram Survey </h1>
-        <section id="Survey">
-            <h2 style="color: brown; font-family: Arial;">Personal Details</h2>
-            <label for="name"><b>Name</b></label>
-         <input type="text" id="name"><br><br>
-         <label for="Email"><b>Email</b></label>
-         <input type="text" id="email"><br><br>
-         
-         <p><b>Gender</b></p>
-         <input type="radio" id="gender" value="Male">
-         <label for="Male">Male</label>
-         <input type="radio" id="female" value="Female">
-         <label for="Female">Female</label>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="survey.css">
+</head>
+<body>
+    <div class="survey-container">
+        <h1>Survey Form</h1>
+        <div class="logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Meta-Logo.png" alt="logo" style="float: right; width:100px;height:50px; position:fixed; top: 40px;">
+            
+        </div>
+        <form action="submit.html">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
 
-    </section>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
 
-    </body>
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female" required>
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="other" required>
+            <label for="other">Other</label>
+
+              <div class="address" style="padding: 10px;">
+                <p><b>Addrress</b></p>
+             <label for="Area">Area </label>
+             <input type="text" id="Area" required>
+             <label for="City">City </label>
+             <input type="text" id="City" required><br><br>
+             <label for="pincode">Pincode </label>
+             <input type="number" id="Pincode" required>
+
+            </div>
+            <label for="country">Country:</label>
+            <select id="country" name="country" required>
+                <option value="" disabled selected>Select your country</option>
+                <option value="USA">USA</option>
+                <option value="Canada">Canada</option>
+                <option value="UK">UK</option>
+                <option value="Australia">Australia</option>
+                <option value="India">India</option>
+            </select>
+
+            
+            <label for="What are your preferences">What are your preferences</label>
+            <input type="checkbox" id="agree" name="Sports">
+            <label for="option1">Sports</label>
+            <input type="checkbox" id="agree" name="Entertainment">
+            <label for="option2">Entertainment</label>
+            <input type="checkbox" id="agree" name="Politics">
+            <label for="option3">Politics</label>
+
+
+            <label for="comments">Comments:</label>
+            <textarea id="comments" name="comments" rows="4" required></textarea>
+
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
 </html>
