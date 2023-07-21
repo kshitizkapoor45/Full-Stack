@@ -1,5 +1,5 @@
 input{
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family:cursive;
 }
 
 h1{
@@ -9,9 +9,11 @@ h1{
 
 section{
     background-color: aliceblue;
+    font-family: Arial;
 }
 
 body{
     margin: 20px;
 }
+
 

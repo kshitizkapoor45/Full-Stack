@@ -1,0 +1,45 @@
+
+#main {
+    color: darkolivegreen;
+    font-family: 'Trebuchet MS', sans-serif;
+    text-decoration: underline;
+}
+
+nav {
+    
+    color: black;
+    font-weight: bold;
+   
+   
+}
+
+nav li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav a {
+    text-decoration: underline;
+    color: #333;
+}
+#logo
+{
+    width:1400px; 
+    height:80px;
+    border:solid green 1px;
+    background-color:rgb(51, 212, 121);
+
+}
+.login{
+
+    position:fixed;
+    right:10px;
+    top:60px
+ }
+ .signin{
+
+    position:fixed;
+    right:60px;
+    top:60px
+ }
+
